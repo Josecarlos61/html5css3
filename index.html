@@ -14,19 +14,38 @@
 
 <body>
     <!-- cabecera -->
-    <header>
-        <div class="container"></div>
+    <header id="inicio">
+        <div class="container flex">
+            <div id="logo">
+                <img src="img/logo.png" alt="hal 9000">
+            </div>
+
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check"> &#x268c;</label>
+
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#conteudo">Contenido</a></li>
+                    <li><a href="#contato">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- Destacados -->
     <main>
         <div class="container">
             <h1>HTML5 e CSS3</h1>
             <h2>Vocè faz. Você vê. Você aprende.</h2>
+            <a href="https://github.com/bedimcode/responsive-watches-website/blob/main/assets/js/main.js"
+                target="_blank" class="boton">Saiba +</a>
 
         </div>
     </main>
+
     <!-- sobre -->
-    <section>
+    <section id="sobre">
         <div class="container">
             <h2>Aprender na práctica</h2>
 
@@ -48,7 +67,7 @@
     </section>
 
     <!-- Conteúdo -->
-    <section>
+    <section id="conteudo">
         <div class="container">
             <h2>Conteúdo</h2>
             <h3>HTML</h3>
@@ -58,8 +77,8 @@
     </section>
 
     <!-- Rodapé -->
-    <footer>
-        <div class="container">
+    <footer id="contato">
+        <div class="container ">
             <p>
                 <a href="http://jigsaw.w3.org/css-validator/check/referer">
                     <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
@@ -68,6 +87,8 @@
             </p>
         </div>
     </footer>
+
+    <a href="#inicio" id="topo"><img src="img/topo.png" alt="parte superior del sitio"></a>
 </body>
 
 </html>

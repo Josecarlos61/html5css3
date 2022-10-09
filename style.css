@@ -28,6 +28,11 @@ body {
 	align-items: center;
 }
 
+.flex3 {
+	display: flex;
+	flex-direction: column;
+}
+
 /* topo do site */
 #topo {
 	position: fixed;
@@ -86,7 +91,7 @@ nav ul {
 
 nav ul li {
 	padding: 20px;
-	border-bottom: 1px solid #a9a9a9;
+	border-bottom: 1px solid #893030;
 }
 
 nav ul li a {
@@ -143,6 +148,25 @@ main h2 {
 	margin-right: 10px;
 }
 
+/* One page */
+#onepage {
+	padding: 50px 10px;
+}
+
+#onepage h2 {
+	margin-bottom: 10px;
+}
+
+#onepage p {
+	margin-bottom: 25px;
+}
+
+#video iframe {
+	width: 340px;
+	height: 191px;
+	border: 0;
+}
+
 /* smartphone Landscape============================= */
 @media (min-width: 576px) {
 	/* layout */
@@ -153,6 +177,11 @@ main h2 {
 	main h1,
 	main h2 {
 		text-shadow: #000 0.05em 0.05em 0.05em;
+	}
+	/* one page */
+	#video iframe {
+		width: 560px;
+		height: 315px;
 	}
 }
 
@@ -234,5 +263,10 @@ main h2 {
 	#destaqueSobre img {
 		border-radius: 50%;
 		margin-right: 50px;
+	}
+	/* One page */
+	.flex3 {
+		flex-direction: row;
+		align-items: center;
 	}
 }
